@@ -1,0 +1,101 @@
+/**index.wxss**/
+.userinfo {
+  height:200px;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: '#C81622';
+}
+
+
+.logo {
+  width:100%;
+  height:65%;
+}
+.search{
+  width:100%;
+  height:35%;
+  background: #C81622;
+  position: relative;
+}
+.search input{
+  box-sizing: border-box;
+  width:90%;
+  height:30px;
+  background: #fff;
+  margin:0 auto;
+  border-radius: 15px;
+  padding-left:38%;
+  font-size:14px;
+}
+.search icon {
+  position: absolute;
+  top:9%;
+  left:37%;
+}
+.discount {
+  width:95%;
+  margin:0 2.5%;
+}
+.discount > text {
+  text-align: left;
+  line-height: 40px;
+  font-size: 14px;
+  color:#999;
+  font-family: 'Microsoft Yahei';
+}
+.discount >view {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: flex-start;
+}
+.discount >view .discount-card {
+  width: 48%;
+  height:120px;
+  border:1px solid #7bacb0;
+  border-radius:5px;
+  -ms-flex-align: center;
+  margin-bottom: 10px;
+}
+.discount-card .price {
+  height:60%;
+  color:#7bacb0;
+}
+.discount-card .price > view {
+  float:left;
+  font-size: 15px;
+}
+.discount-card .price > view .flag {
+  position: relative;
+  margin:20px 0 5px 15px;
+  padding-left:5px;
+  width:30px;
+  font-size: 14px;
+  background: #7bacb0;
+  color:#fff;
+}
+.discount-card .price > view view.flag:before{
+  content:'';
+  font-size: 0;
+  position: absolute;
+  left:-18px;
+  top:9px;
+  border:9px solid transparent;
+  border-right-color:#7bacb0;
+  margin:-10px 2px 0 0;
+}
+.discount-card .description {
+  height:40%;
+  background: #7bacb0;
+  color:#fff;
+  font-size: 13px;
+  line-height: 50px;
+  padding-left:10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

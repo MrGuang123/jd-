@@ -1,0 +1,89 @@
+.container {
+  background: #eee;
+}
+.user-info{
+  height:120px;
+  width:100%;
+  background: #e45050;
+  margin-bottom: 20px;
+}
+.user-info image {
+  width:60px;
+  height:60px;
+  float: left;
+  border-radius: 50%;
+  margin:30px;
+}
+.user-info text {
+  float:left;
+  line-height: 120px;
+  color:#fff;
+}
+.order-option,.coupon{
+  width:100%;
+  background: #fff;
+  margin-bottom:20px;
+}
+.coupon {
+  margin-bottom:146px;
+}
+.order-option navigator,.coupon navigator{
+  border-bottom:1px solid #ccc;
+  padding:10px 20px;
+  line-height: 30px;
+}
+.order-option .icon,.coupon .icon {
+  width:30px;
+  height:30px;
+  float:left;
+  margin-right:20px;
+  background: #ccc;
+  border-radius:50%;
+}
+.order-option text,.coupon text {
+  font-size: 14px;
+}
+.order-option .right,.coupon .right {
+  float:right;
+  width:20px;
+  height:20px;
+  padding-top:5px;
+}
+.dialog {
+    position: fixed;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,.5);
+    top:0;
+    left:0;
+    font-family: 'Microsoft Yahei';
+}
+.dialog .dialog-content {
+    width:250px;
+    height:150px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-125px;
+    margin-top:-75px;
+    padding-top:40px;
+    font-size: 15px;
+}
+.dialog .dialog-content text:first-child{
+    display: block;
+    padding:0 40px 0 20px;
+    text-align: left;
+}
+.dialog .dialog-content .i-know {
+    position: absolute;
+    bottom:20px;
+    right:20px;
+    padding:2px 5px;
+    color:#cd3149;
+    font-weight: 500;
+    border-radius: 10px;
+    background: rgba(0,0,0,.1);
+}
+

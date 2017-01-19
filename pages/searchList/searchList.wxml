@@ -1,0 +1,21 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="user-info">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <text>{{userInfo.nickName}}</text>
+  </view>
+  <view class="order-option">
+    <navigator wx:for="{{orderData}}" wx:key="name" url="{{item.navUrl}}" open-type="switchTab">
+      <image class="icon" src="{{item.orderIconUrl}}"></image>
+      <text>{{item.name}}</text>
+      <image class="right" src="../../img/arrowright.png"></image>
+    </navigator>
+  </view>
+  <view class="coupon">
+    <navigator url="" open-type="switchTab">
+      <image class="icon" src="../../img/icon_component.png"></image>
+      <text>优惠券</text>
+      <image class="right" src="../../img/arrowright.png"></image>
+    </navigator>
+  </view>
+</view>

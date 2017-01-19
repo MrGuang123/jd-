@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="logo" src="../../img/logo.png"></image>
+    <view class="search" bindtap="search">
+      <input placeholder="搜索京东商品" type="text" />
+      <icon type="search" size="16"></icon>
+    </view>
+  </view>
+  <view class="discount">
+    <text class="discount-title">发现京东好券</text>
+    <view scroll-y="true">
+      <view class="discount-card" wx:for="{{discountData}}" wx:key="total">
+        <view class="price">
+          <view style="padding:15px 15px 0 10px;">
+            <text style="font-size:1rem;">￥</text>
+            <text style="font-size:1.5rem;">{{item.total}}</text>
+          </view>
+          <view>
+            <view class="flag">东券</view>
+            <text>满{{item.condition}}可用</text>
+          </view>
+        </view>
+        <view class="description">{{item.des}}</view>
+      </view>
+    </view>
+  </view>
+</view>

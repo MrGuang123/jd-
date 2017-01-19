@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/selfInfo/selfInfo",
+    "pages/searchGoods/searchGoods",
+    "pages/myOrder/myOrder",
+    "pages/searchList/searchList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "京东购物",
+    "navigationBarTextStyle": "black",
+    "backgroundColor":"#ff0",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor":"#0f0",
+    "backgroundColor":"#fff",
+    "borderStyle":"black",
+    "position":"bottom",
+    "list": [{
+      "pagePath": "pages/searchGoods/searchGoods",
+      "iconPath":"img/icon_API.png",
+      "selectedIconPath":"img/icon_API_HL.png",
+      "text": "搜索商品"
+    }, {
+      "pagePath": "pages/selfInfo/selfInfo",
+      "iconPath":"img/wechat.png",
+      "selectedIconPath":"img/wechatHL.png",
+      "text": "我的订单"
+    }]
+  }
+}
