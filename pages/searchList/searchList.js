@@ -22,6 +22,10 @@ Page({
         console.log(event)
         console.log(value)
 
+        wx.redirectTo({
+            url:"../goodsList/goodsList"
+        })
+
         if(event.target.id === '搜索'){
 
             this.setData({

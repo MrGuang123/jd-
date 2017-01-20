@@ -1,0 +1,37 @@
+.search-block {
+    width:750rpx;
+    height:65rpx;
+    position: relative;
+    padding:40rpx 0 15rpx 0;
+    font-family: 'Microsoft Yahei';
+    border-bottom:1px solid #e0e0e0;
+    display: flex;
+}
+.search-block  input{
+    box-sizing: border-box;
+    width:90%;
+    height:30px;
+    background: #f0eff4;
+    border-radius: 15px;
+    padding-left:60rpx;
+    font-size:14px;
+    margin-left:40rpx;
+    font-weight: 600;
+    font-family: 'Microsoft Yahei';
+}
+.search-block  icon {
+    position: absolute;
+    top:55rpx;
+    left:60rpx;
+}
+.filter-list {
+    width:750rpx;
+    display: flex;
+}
+.filter-list > view {
+    width:100%;
+    text-align: center;
+    line-height: 100rpx;
+    font-weight: 600;
+    font-size: 14px;
+}

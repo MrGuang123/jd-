@@ -1,0 +1,23 @@
+
+<view class="container">
+<!--搜索框-->
+    <view class="search-block">
+      <input placeholder="搜索京东商品" value="{{defaultValue}}" type="text" bindinput="keyinput"/>
+      <icon type="search" size="16" color="#afafb1"></icon>
+    </view>
+<!--筛选列表-->
+    <view class="filter-list">
+      <view>
+        <text>综合</text>
+      </view>
+      <view>
+        <text>销量</text>
+      </view>
+      <view>
+        <text>价格</text>
+      </view>
+      <view>
+        <text>筛选</text>
+      </view>
+    </view>
+</view>
