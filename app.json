@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/searchList/searchList",
     "pages/searchGoods/searchGoods",
     "pages/myOrder/myOrder",
-    "pages/selfInfo/selfInfo",
-    "pages/searchList/searchList"
+    "pages/selfInfo/selfInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",

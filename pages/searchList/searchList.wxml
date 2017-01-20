@@ -1,21 +1,25 @@
 <!--logs.wxml-->
 <view class="container">
-  <view class="user-info">
-    <image src="{{userInfo.avatarUrl}}"></image>
-    <text>{{userInfo.nickName}}</text>
+<!--搜索区域-->
+  <view class="search-block">
+    <input placeholder="搜索京东商品" type="text" bindinput="keyinput"/>
+    <icon type="search" size="16" color="#afafb1"></icon>
+    <button size="mini" id="{{searchContent?'搜索':'取消'}}" bindtap="search" class="{{searchContent?'btn-search':''}}">{{searchContent?'搜索':'取消'}}</button>
   </view>
-  <view class="order-option">
-    <navigator wx:for="{{orderData}}" wx:key="name" url="{{item.navUrl}}" open-type="switchTab">
-      <image class="icon" src="{{item.orderIconUrl}}"></image>
-      <text>{{item.name}}</text>
-      <image class="right" src="../../img/arrowright.png"></image>
-    </navigator>
+  <!--历史记录-->
+  <view class="history">
+    <text class="title">历史搜索</text>
+    <text class="clear">清除</text>
+    <view>
+      <text>笔记本电脑</text>
+    </view>
   </view>
-  <view class="coupon">
-    <navigator url="" open-type="switchTab">
-      <image class="icon" src="../../img/icon_component.png"></image>
-      <text>优惠券</text>
-      <image class="right" src="../../img/arrowright.png"></image>
-    </navigator>
+  <!--热门搜索-->
+  <view class="hot history">
+    <text class="title">热门搜索</text>
+    <text class="clear">换一批</text>
+    <view>
+      <text wx:for="{{hotWord}}">{{item}}</text>
+    </view>
   </view>
 </view>

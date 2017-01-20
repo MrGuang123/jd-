@@ -1,0 +1,65 @@
+.search-block {
+    width:750rpx;
+    height:65rpx;
+    position: relative;
+    padding:40rpx 0;
+    font-family: 'Microsoft Yahei';
+    border-bottom:1px solid #e0e0e0;
+    display: flex;
+    
+}
+.search-block  input{
+  box-sizing: border-box;
+  width:70%;
+  height:30px;
+  background: #f0eff4;
+  border-radius: 15px;
+  padding-left:60rpx;
+  font-size:14px;
+  margin-left:40rpx;
+}
+.search-block  icon {
+  position: absolute;
+  top:55rpx;
+  left:60rpx;
+}
+.search-block button {
+    width:122rpx;
+    height:60rpx;
+    float:right;
+}
+.search-block .btn-search{
+    background: #e92322;
+    color:#fff;
+}
+.history {
+    width:690rpx;
+    font-family: 'Mirosoft Yahei';
+    padding:0 30rpx;
+}
+.history .title {
+    font-size: 16px;
+    font-weight: 700;
+    float:left;
+    line-height: 100rpx;
+}
+.history .clear {
+    float:right;
+    font-size: 14px;
+    color:#f00;
+    line-height: 100rpx;
+}
+.history > view {
+    clear:both;
+}
+.history > view text {
+    font-size: 14px;
+    padding:14rpx 24rpx;
+    background: #f0eff4;
+    font-weight: 600;
+    display: inline-block;
+    margin:0 20rpx 20rpx 0;
+}
+.hot {
+    margin-top:60rpx;
+}
