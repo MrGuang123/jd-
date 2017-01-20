@@ -1,4 +1,15 @@
 <!--logs.wxml-->
 <view class="container">
-  <text>我是order页面</text>
+  <view class="tab-bar">
+    <text bindtap="tabTap" id="{{index}}" wx:for="{{tabData}}" wx:key="{{index}}" class="{{currentId == index?'tab-select':''}}">{{item}}</text>
+  </view>
+  <view class="tab-content">
+    <view wx:for="{{tabData}}" wx:if="{{currentId == index}}">
+      <view class="bg-gray">
+        <icon type="search" size="60" color="#fff"></icon>
+      </view>
+      <text>您当时暂无该类优惠券{{index+1}}</text>
+      <button bindtap="goToHome" type="default">去首页领券</button>
+    </view>
+  </view>
 </view>

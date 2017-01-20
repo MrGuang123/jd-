@@ -6,18 +6,18 @@ var app = getApp();
 var orderData = [
   {
     orderIconUrl:'../../img/pause.png',
-    navUrl:'/pages/myOrder/myOrder',
+    navUrl:'/pages/myOrder/myOrder?id=0',
     name:'全部订单'
   },
   {
     orderIconUrl:'../../img/play.png',
-    navUrl:'/pages/myOrder/myOrder',
+    navUrl:'/pages/myOrder/myOrder?id=1',
     name:'代付款'
   },
   {
     orderIconUrl:'../../img/plus.png',
-    navUrl:'/pages/myOrder/myOrder',
-    name:'代收款'
+    navUrl:'/pages/myOrder/myOrder?id=2',
+    name:'代收货'
   },
   {
     orderIconUrl:'../../img/record.png',
@@ -88,6 +88,5 @@ Page({
         userInfo:userInfo
       })
     })
-    console.log(this.data.userInfo)
   }
 })

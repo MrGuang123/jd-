@@ -1,0 +1,53 @@
+.tab-bar {
+    display: flex;
+    align-content:row;
+    width:750rpx;
+    font-family: 'Microsoft Yahei';
+}
+.tab-bar text {
+    display: inline-block;
+    width:250rpx;
+    text-align: center;
+    padding:20px 0;
+    border-bottom:1px solid #ccc;
+}
+.tab-bar .tab-select {
+    border-bottom:2px solid #e92322;
+}
+.tab-content {
+    width:750rpx;
+    height:1000rpx;
+    position: relative;
+}
+.tab-content > view {
+    width:750rpx;
+    height:100%;
+    position: absolute;
+    background: #f1f0f6;
+}
+
+.tab-content .bg-gray {
+    background: #d6d5db;
+    width:220rpx;
+    height:220rpx;
+    border-radius:50%;
+    margin:100rpx auto 0;
+    border:1px solid #d6d5db;
+}
+.tab-content .bg-gray icon {
+    display: block;
+    margin:28px;
+}
+.tab-content text {
+    display: block;
+    margin-top:40rpx;
+    margin-bottom:40rpx;
+    width:100%;
+    text-align: center;
+}
+.tab-content button {
+    width:35%;
+    border:1px solid #d0d0d2;
+    font-family: 'Microsoft Yahei';
+    
+}

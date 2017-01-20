@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/selfInfo/selfInfo",
     "pages/searchGoods/searchGoods",
     "pages/myOrder/myOrder",
+    "pages/selfInfo/selfInfo",
     "pages/searchList/searchList"
   ],
   "window": {
@@ -10,8 +10,7 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "京东购物",
     "navigationBarTextStyle": "black",
-    "backgroundColor":"#ff0",
-    "enablePullDownRefresh":"true"
+    "backgroundColor":"#ff0"
   },
   "tabBar": {
     "color": "#ccc",
