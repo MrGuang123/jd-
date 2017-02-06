@@ -27,6 +27,7 @@
 .filter-list {
     width:750rpx;
     display: flex;
+    border-bottom:2px solid #f0f0f0;
 }
 .filter-list > view {
     width:100%;
@@ -34,4 +35,69 @@
     line-height: 100rpx;
     font-weight: 600;
     font-size: 14px;
+}
+.goods-list-wrapper {
+    width:100%;
+    height:1030rpx;
+    overflow-y: scroll;
+}
+
+.goods-item {
+
+}
+.goods-item .img {
+    width:35%;
+    height:200rpx;
+    display: inline-block;
+}
+.goods-item image {
+    width:80%;
+    height:80%;
+    padding-left:10%;
+    padding-top:20%;
+}
+.goods-item .disc {
+    display: inline-block;
+    width:65%;
+    height:200rpx;
+    padding:40rpx 0 20rpx;
+    border-bottom:1px solid #ccc;
+}
+.goods-item .disc .mark {
+    display: inline;
+    padding:2px 5px;
+    margin-right:5px;
+    background: #f00;
+    color:#fff;
+    font-size: 12px;
+    border-radius:4px;
+}
+.goods-item .disc .title {
+    display: inline-block;
+    display: -webkit-box;
+    width:95%;
+    padding-right:5%;
+    height:80rpx;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+}
+.goods-item .disc .money {
+    display: block;
+    color:#f00;
+}
+.goods-item .disc .money::before {
+    content:'￥';
+    font-size: 12px;
+}
+.goods-item .disc .evaluate {
+    font-size: 14px;
+    color:#c0c0c0;
+}
+.filter-select {
+    color:#f00;
 }

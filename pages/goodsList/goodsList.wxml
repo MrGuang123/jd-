@@ -2,22 +2,28 @@
 <view class="container">
 <!--搜索框-->
     <view class="search-block">
-      <input placeholder="搜索京东商品" value="{{defaultValue}}" type="text" bindinput="keyinput"/>
+      <input placeholder="搜索京东商品" value="{{searchKey}}" type="text" bindinput="keyinput"/>
       <icon type="search" size="16" color="#afafb1"></icon>
     </view>
 <!--筛选列表-->
     <view class="filter-list">
-      <view>
-        <text>综合</text>
+      <view wx:for="{{filterData}}" data-id="{{index}}" bindtap="select" class="{{select == index ?'filter-select':''}}">
+        <text>{{item}}</text>
       </view>
-      <view>
-        <text>销量</text>
-      </view>
-      <view>
-        <text>价格</text>
-      </view>
-      <view>
-        <text>筛选</text>
+    </view>
+    <!--商品内容-->
+    <view class="goods-list-wrapper">
+      <view class="goods-item" wx:for="{{firstData}}">
+        <view class="img">
+          <image src="{{item.imgSrc}}"></image>
+        </view>
+        <view class="disc">
+          <text class="title">
+            <text class="mark">自营</text>{{item.title}}
+          </text>
+          <text class="money">{{item.money}}</text>
+          <text class="evaluate">{{item.evaluate}}条评价 {{item.praise}}%好评</text>
+        </view>
       </view>
     </view>
 </view>

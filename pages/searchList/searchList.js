@@ -19,29 +19,28 @@ Page({
     },
     search:function(event){
         var value = event.detail.value;
-        console.log(event)
-        console.log(value)
-
-        wx.redirectTo({
-            url:"../goodsList/goodsList"
-        })
 
         if(event.target.id === '搜索'){
 
+            // app.setData({
+            //     searchKeyword:this.data.searchContent
+            // })
+            app.globalData.searchKeyword = this.data.searchContent;
+            console.log(app.globalData.searchKeyword)
             this.setData({
                 searchContent:undefined
             })
-            return {
-                value:''    
-            }
+            wx.redirectTo({
+                url:"../goodsList/goodsList"
+            })
         }else if(event.target.id === '取消'){
 
             this.setData({
                 searchContent:undefined
             })
-            return {
-                value:''    
-            }
+            wx.navigateBack({
+                delta: 2
+            })
         }
     },
     keyinput:function(event){
